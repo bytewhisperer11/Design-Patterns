@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Patterns</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #34495e;
+        }
+
+        code {
+            background-color: #ecf0f1;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Design Patterns</h1>
+    <p>Explore various design patterns and their usage in software development</p>
+</header>
+
+<main>
+    <section class="section">
+        <h2>Introduction</h2>
+        <p>Design patterns are standard solutions to common problems in software design. They provide proven, reusable templates for solving issues that frequently arise during software development.</p>
+    </section>
+
+    <section class="section">
+        <h2>Common Design Patterns</h2>
+        <h3>Creational Patterns</h3>
+        <p>These patterns deal with object creation mechanisms. Examples include:</p>
+        <ul>
+            <li><strong>Singleton</strong>: Ensures a class has only one instance and provides a global point of access to it.</li>
+            <li><strong>Factory Method</strong>: Defines an interface for creating objects, but allows subclasses to alter the type of objects that will be created.</li>
+            <li><strong>Abstract Factory</strong>: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.</li>
+        </ul>
+
+        <h3>Structural Patterns</h3>
+        <p>These patterns deal with object composition and typically help ensure that objects work well together. Examples include:</p>
+        <ul>
+            <li><strong>Adapter</strong>: Converts one interface to another expected by the client.</li>
+            <li><strong>Decorator</strong>: Attaches additional responsibilities to an object dynamically.</li>
+            <li><strong>Facade</strong>: Provides a simplified interface to a complex subsystem.</li>
+        </ul>
+
+        <h3>Behavioral Patterns</h3>
+        <p>These patterns focus on communication between objects. Examples include:</p>
+        <ul>
+            <li><strong>Observer</strong>: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified.</li>
+            <li><strong>Strategy</strong>: Defines a family of algorithms and makes them interchangeable.</li>
+            <li><strong>Command</strong>: Encapsulates a request as an object, thereby allowing parameterization of clients with different requests.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Code Example: Singleton Pattern</h2>
+        <pre>
+<code>
+class Singleton {
+    private static instance: Singleton;
+
+    private constructor() {}
+
+    public static getInstance(): Singleton {
+        if (!Singleton.instance) {
+            Singleton.instance = new Singleton();
+        }
+        return Singleton.instance;
+    }
+}
+
+// Usage
+const singleton1 = Singleton.getInstance();
+const singleton2 = Singleton.getInstance();
+
+console.log(singleton1 === singleton2);  // Output: true
+</code>
+        </pre>
+    </section>
+
+    <section class="section">
+        <h2>Conclusion</h2>
+        <p>Design patterns are essential tools for any software engineer. They help in creating scalable, maintainable, and efficient systems. By understanding and implementing design patterns, developers can improve the quality of their code and their problem-solving skills.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Created with ❤️ by Your Name</p>
+</footer>
+
+</body>
+</html>
