@@ -1,4 +1,4 @@
-# Design Patterns in TypeScript
+# Design Patterns
 
 This repository contains examples and notes for **design patterns** implemented in **TypeScript**. It is aimed at helping developers understand, apply, and practice design patterns in real-world scenarios.
 
