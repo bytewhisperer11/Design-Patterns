@@ -44,7 +44,7 @@ Each folder contains:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/vishal563/design-pattern
+   git clone https://github.com/bytewhisperer11/design-pattern
    cd design-pattern
    ```
 2. Navigate to a specific pattern folder to review the code and explanation.
