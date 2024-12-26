@@ -1,6 +1,6 @@
 # Design Patterns
 
-This repository contains examples and notes for **design patterns** implemented in **TypeScript**. It is aimed at helping developers understand, apply, and practice design patterns in real-world scenarios.
+This repository contains examples and notes for **design patterns**. It is aimed at helping developers understand, apply, and practice design patterns in real-world scenarios.
 
 ---
 
@@ -28,7 +28,6 @@ design-patterns/
 ```
 
 Each folder contains:
-- **Code**: TypeScript implementation of the pattern.
 - **README.md**: Explanation and use case for the pattern.
 
 ---
@@ -36,7 +35,7 @@ Each folder contains:
 ## 🎯 Goals
 
 - **Learn**: Deepen your understanding of design patterns.
-- **Practice**: Write TypeScript code following best practices.
+- **Practice**: Write in your prefered language following best practices.
 - **Apply**: Integrate patterns into your projects effectively.
 
 ---
