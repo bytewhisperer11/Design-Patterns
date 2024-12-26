@@ -16,6 +16,7 @@ design-patterns/
 ├── creational/
 │   ├── singleton/
 │   ├── factory/
+|   ├── abstractfactory/
 │   └── builder/
 ├── structural/
 │   ├── adapter/
